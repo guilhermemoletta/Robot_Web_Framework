@@ -1,13 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
-
-*** Variables ***
-${URL}        https://demos.bellatrix.solutions/
-${BROWSER}    chrome
+Variables     ../variables/confing.yaml
 
 *** Keywords ***
 Open driver
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    ${browser}
     Maximize Browser Window
 
 
